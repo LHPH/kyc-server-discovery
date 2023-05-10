@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: kyc-server-discovery
+
+server:
+  port: 9100
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:9100/eureka
+  server:
+    renewalPercentThreshold: 0.49
