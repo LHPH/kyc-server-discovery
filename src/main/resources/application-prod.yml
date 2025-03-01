@@ -1,11 +1,11 @@
 logging:
   file:
     name: /opt/kyc/logs/${spring.application.name}.log
-    logback:
-      rollingpolicy:
-        file-name-pattern: /opt/kyc/logs/${spring.application.name}/%d{yyyy-MM-dd}.%i.log.gz
-        max-file-size: 50MB
-        max-history: 30
+  logback:
+    rollingpolicy:
+      file-name-pattern: /opt/kyc/logs/${spring.application.name}/%d{yyyy-MM-dd}.%i.log.gz
+      max-file-size: 50MB
+      max-history: 3
   level:
     root: INFO
     com.kyc: INFO
